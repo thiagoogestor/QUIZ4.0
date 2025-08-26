@@ -1,0 +1,105 @@
+/* Estilo geral do corpo da página */
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilo do contêiner principal do quiz */
+.quiz-container {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.quiz-container h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 25px;
+}
+
+/* Estilo da área da pergunta */
+.quiz-area {
+    margin-top: 20px;
+}
+
+#question {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os botões de resposta */
+#answer-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btn {
+    background: #f0f2f5;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    text-align: left;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #e0e2e5;
+    transform: translateY(-2px);
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+}
+
+/* Estilo para os botões de resposta correta e incorreta */
+.btn.correct {
+    background: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.btn.incorrect {
+    background: #f8d7da;
+    color: #721c24;
+    border-color: #f5c6cb;
+}
+
+/* Estilo para o botão "Próxima" */
+#next-btn {
+    background: #007bff;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: none; /* Esconde o botão inicialmente */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#next-btn:hover {
+    background: #0056b3;
+}
