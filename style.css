@@ -169,3 +169,24 @@ body {
     transform: none;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
+/* --- Estilos dos Botões de Ação Final --- */
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espaçamento entre os botões */
+    margin-top: 30px;
+}
+
+/* Esconde o botão de voltar por padrão */
+#home-btn {
+    display: none;
+    background: #6c757d; /* Uma cor secundária */
+    text-decoration: none; /* Remove o sublinhado do link */
+    padding: 15px; /* Ajuste para alinhar com o outro botão */
+    text-align: center;
+}
+
+#home-btn:hover {
+    background: #5a6268;
+}
