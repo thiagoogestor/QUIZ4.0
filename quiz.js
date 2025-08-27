@@ -2,6 +2,7 @@
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const homeButton = document.getElementById("home-btn"); // ADICIONE ESTA LINHA
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -69,6 +70,7 @@ function showQuestion() {
 // Reseta o estado (limpa botões) antes de exibir uma nova pergunta
 function resetState() {
   nextButton.style.display = "none";
+    homeButton.style.display = "none"; // ADICIONE ESTA LINHA
   while (answerButtons.firstChild) {
     answerButtons.removeChild(answerButtons.firstChild);
   }
@@ -101,6 +103,7 @@ function showScore() {
   questionElement.innerHTML = `Você pontuou ${score} de ${questions.length}!`;
   nextButton.innerHTML = "Jogar Novamente";
   nextButton.style.display = "block";
+  homeButton.style.display = "block"; // ADICIONE ESTA LINHA
 }
 
 // Lida com o clique no botão "Próxima"
@@ -124,3 +127,4 @@ nextButton.addEventListener("click", () => {
 
 // Inicia o jogo
 startQuiz();
+
