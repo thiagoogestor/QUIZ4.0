@@ -169,13 +169,49 @@ body {
     transform: none;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
-/* --- Estilos dos Botões de Ação Final --- */
+/* --- Estilos dos Botões de Ação (Próxima / Voltar) --- */
 
 .action-buttons {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Espaçamento entre os botões */
+    gap: 15px;
     margin-top: 30px;
+}
+
+/* Define um estilo base para os dois botões */
+#next-btn, #home-btn {
+    color: #fff;
+    font-weight: 500;
+    width: 180px;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    text-decoration: none; /* Garante que o link não tenha sublinhado */
+
+    /* A MÁGICA: Esconde os dois por padrão */
+    display: none;
+}
+
+/* Cor primária para o botão Próxima/Jogar Novamente */
+#next-btn {
+    background: #007bff;
+}
+
+#next-btn:hover {
+    background: #0056b3;
+}
+
+/* Cor secundária para o botão Voltar */
+#home-btn {
+    background: #6c757d;
+}
+
+#home-btn:hover {
+    background: #5a6268;
 }
 
 /* Esconde o botão de voltar por padrão */
