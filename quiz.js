@@ -93,7 +93,8 @@ function selectAnswer(e) {
     }
     button.disabled = true;
   });
-
+ // --- NOSSA LINHA DE DIAGNÓSTICO ---
+console.log("Tentando mostrar o botão Próxima:", nextButton);
   nextButton.style.display = "block";
 }
 
@@ -127,4 +128,5 @@ nextButton.addEventListener("click", () => {
 
 // Inicia o jogo
 startQuiz();
+
 
