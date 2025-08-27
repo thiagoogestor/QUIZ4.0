@@ -95,7 +95,7 @@ function selectAnswer(e) {
   });
  // --- NOSSA LINHA DE DIAGNÓSTICO ---
 console.log("Tentando mostrar o botão Próxima:", nextButton);
-  nextButton.style.display = "block";
+ nextButton.style.setProperty("display", "block", "important");
 }
 
 // Exibe a pontuação final
@@ -128,5 +128,6 @@ nextButton.addEventListener("click", () => {
 
 // Inicia o jogo
 startQuiz();
+
 
 
